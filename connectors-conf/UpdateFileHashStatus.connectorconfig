@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="connectionHTTPAPI" version="1.0.0" name="UpdateFileHashStatus" modelVersion="7.1.0-001">
+  <parameters key="endpoint">
+    <expression xsi:type="expression:Expression" name="http://10.1.180.42:8088/G2multidivision/UpdateFileHashStatus" content="http://10.1.180.42:8088/G2multidivision/UpdateFileHashStatus" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="method">
+    <expression xsi:type="expression:Expression" name="POST" content="POST" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="payload">
+    <expression xsi:type="expression:Expression" name="{&#xA;    &quot;requesttype&quot;: &quot;QueryAssessment&quot;,&#xA;    &quot;statuscode&quot;: 201,&#xA;    &quot;status&quot;: &quot;Indeterminable&quot;,&#xA;    &quot;sha1&quot;: &quot;000D089FAD98CE7AD1FF4319670E30C7C514F0D4&quot;&#xA;}&#xA;" content="{&#xA;    &quot;requesttype&quot;: &quot;QueryAssessment&quot;,&#xA;    &quot;statuscode&quot;: 201,&#xA;    &quot;status&quot;: &quot;Indeterminable&quot;,&#xA;    &quot;sha1&quot;: &quot;000D089FAD98CE7AD1FF4319670E30C7C514F0D4&quot;&#xA;}&#xA;" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="properties">
+    <expression xsi:type="expression:Expression" name="application/json" content="application/json" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

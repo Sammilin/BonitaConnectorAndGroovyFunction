@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>QueueService</id>
+  <version>1.0.0</version>
+  <input name="url" type="java.lang.String"/>
+  <input name="username" type="java.lang.String"/>
+  <input name="pwd" type="java.lang.String"/>
+  <input name="service_name" type="java.lang.String"/>
+  <input name="content" type="java.lang.String"/>
+  <output name="output" type="java.lang.String"/>
+  <page id="inputData">
+    <widget xsi:type="definition:Text" id="url" inputName="url"/>
+    <widget xsi:type="definition:Text" id="username" inputName="username"/>
+    <widget xsi:type="definition:Text" id="password" inputName="pwd"/>
+    <widget xsi:type="definition:Text" id="service_name" inputName="service_name"/>
+    <widget xsi:type="definition:Text" id="content" inputName="content"/>
+  </page>
+</definition:ConnectorDefinition>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="connectionHTTPAPI" version="1.0.0" name="querytype" modelVersion="7.1.0-001">
+  <parameters key="endpoint">
+    <expression xsi:type="expression:Expression" name="http://10.1.185.33:8088/G2multidivision/GetDetectionTypeString" content="http://10.1.185.33:8088/G2multidivision/GetDetectionTypeString" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="api_getDetectionTypeString_URL" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="method">
+    <expression xsi:type="expression:Expression" name="POST" content="POST" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="payload">
+    <expression xsi:type="expression:Expression" name="[&#xA;{&quot;detection&quot;:&quot;NO_VIRUS&quot;,&quot;branchName&quot;:&quot;TRENDMICRO&quot;,&quot;version&quot;:&quot;123456&quot;},&#xA;{&quot;detection&quot;:&quot;HEURSPY_ABC&quot;,&quot;branchName&quot;:&quot;TMCONSUMER&quot;,&quot;version&quot;:&quot;123456&quot;}&#xA;]" content="[&#xA;{&quot;detection&quot;:&quot;NO_VIRUS&quot;,&quot;branchName&quot;:&quot;TRENDMICRO&quot;,&quot;version&quot;:&quot;123456&quot;},&#xA;{&quot;detection&quot;:&quot;HEURSPY_ABC&quot;,&quot;branchName&quot;:&quot;TMCONSUMER&quot;,&quot;version&quot;:&quot;123456&quot;}&#xA;]" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="request">
+        <dataType xsi:type="process:StringType" href="platform:/resource/default/diagrams/GetFileReputationProcess-1.0.proc#_p1ZpZ4KpEeWOHvB7CaSu1Q"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="properties">
+    <expression xsi:type="expression:Expression" name="application/json" content="application/json" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

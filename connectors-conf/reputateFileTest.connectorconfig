@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="connectionSOAPAPI" version="1.0.0" name="reputateFileTest" modelVersion="7.1.0-001">
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="http://SJC1-CHRN-S-VIP.frsnet.org:8080/WebService/Service1.asmx" content="http://SJC1-CHRN-S-VIP.frsnet.org:8080/WebService/Service1.asmx" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="namespace">
+    <expression xsi:type="expression:Expression" name="http://tempuri.org/" content="http://tempuri.org/" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="bodyXML">
+    <expression xsi:type="expression:Expression" name="&lt;reputateFileTrackable>&#xD;  &lt;ServiceID>ad556bc4-4be0-42c6-94d9-c569c2784ae8&lt;/ServiceID>&#xD;  &lt;sha1>63A273C879E3D40E735B7D5C36829269F873787F&lt;/sha1>&#xD;  &lt;filepath>ftp://AM-STRG-S.FRSNET.ORG/rsvp/UPLOADVIRUS/RSVP/63/A27/3C8/79E3D/63A273C879E3D40E735B7D5C36829269F873787F/63A273C879E3D40E735B7D5C36829269F873787F&lt;/filepath>&#xD;  &lt;messagekey>bf238225-ae3f-4149-b6c3-8d396df44252&lt;/messagekey>&#xD;  &lt;DirectSubmission>false&lt;/DirectSubmission>&#xD;&lt;/reputateFileTrackable>" content="&lt;reputateFileTrackable>&#xD;  &lt;ServiceID>ad556bc4-4be0-42c6-94d9-c569c2784ae8&lt;/ServiceID>&#xD;  &lt;sha1>63A273C879E3D40E735B7D5C36829269F873787F&lt;/sha1>&#xD;  &lt;filepath>ftp://AM-STRG-S.FRSNET.ORG/rsvp/UPLOADVIRUS/RSVP/63/A27/3C8/79E3D/63A273C879E3D40E735B7D5C36829269F873787F/63A273C879E3D40E735B7D5C36829269F873787F&lt;/filepath>&#xD;  &lt;messagekey>bf238225-ae3f-4149-b6c3-8d396df44252&lt;/messagekey>&#xD;  &lt;DirectSubmission>false&lt;/DirectSubmission>&#xD;&lt;/reputateFileTrackable>" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

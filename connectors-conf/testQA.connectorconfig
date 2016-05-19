@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="invokeBRMDecision" version="1.0.0" name="testQA" modelVersion="7.1.0-001">
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="http://tw-bawiki01d:8080/kie-server/services/rest/server/containers/QARequery&#xA;" content="http://tw-bawiki01d:8080/kie-server/services/rest/server/containers/QARequery&#xA;" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="brmQARequery_URL" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="payload">
+    <expression xsi:type="expression:Expression" name="&lt;batch-execution>&#xA;    &lt;insert out-identifier=&quot;ReQueryCondition&quot;>&#xA;        &lt;trend.qarequery.ReQueryCondition>&#xA;            &lt;branchStatus>Processing&lt;/branchStatus>&#xA;            &lt;charonResult>Malicious_Migration&lt;/charonResult>&#xA;            &lt;needRequery>&lt;/needRequery>&#xA;            &lt;neuronDataJson>{}&lt;/neuronDataJson>&#xA;        &lt;/trend.qarequery.ReQueryCondition>&#xA;    &lt;/insert>&#xA;    &lt;fire-all-rules />&#xA;&lt;/batch-execution>" content="&lt;batch-execution>&#xA;    &lt;insert out-identifier=&quot;ReQueryCondition&quot;>&#xA;        &lt;trend.qarequery.ReQueryCondition>&#xA;            &lt;branchStatus>Processing&lt;/branchStatus>&#xA;            &lt;charonResult>Malicious_Migration&lt;/charonResult>&#xA;            &lt;needRequery>&lt;/needRequery>&#xA;            &lt;neuronDataJson>{}&lt;/neuronDataJson>&#xA;        &lt;/trend.qarequery.ReQueryCondition>&#xA;    &lt;/insert>&#xA;    &lt;fire-all-rules />&#xA;&lt;/batch-execution>" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="requestXML">
+        <dataType xsi:type="process:StringType" href="platform:/resource/default/diagrams/GetFileReputationProcess-1.0.proc#_p1ZpZ4KpEeWOHvB7CaSu1Q"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="method">
+    <expression xsi:type="expression:Expression" name="POST" content="POST" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="brmQARequery_Method" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="sammi" content="sammi" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="brm_username" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="brm" content="brm" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="brm_password" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

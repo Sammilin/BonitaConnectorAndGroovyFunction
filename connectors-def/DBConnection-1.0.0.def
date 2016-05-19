@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>DBConnection</id>
+  <version>1.0.0</version>
+  <category icon="mssqlserver.png" id="mssqlserver" parentCategoryId="database"/>
+  <category icon="database.png" id="database"/>
+  <input mandatory="true" name="endpoint" type="java.lang.String"/>
+  <input name="port" type="java.lang.String"/>
+  <input mandatory="true" name="database" type="java.lang.String"/>
+  <input mandatory="true" name="username" type="java.lang.String"/>
+  <output name="records" type="java.util.List"/>
+  <page id="InputConnectionInfo">
+    <widget xsi:type="definition:Text" id="endpoint" inputName="endpoint"/>
+    <widget xsi:type="definition:Text" id="port" inputName="port"/>
+    <widget xsi:type="definition:Text" id="username" inputName="username"/>
+    <widget xsi:type="definition:Text" id="database" inputName="database"/>
+  </page>
+</definition:ConnectorDefinition>

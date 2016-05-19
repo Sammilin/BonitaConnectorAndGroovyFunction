@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>brmData</id>
+  <version>1.0.0</version>
+  <input name="requestType" type="java.lang.String"/>
+  <output name="Output1" type="java.lang.String"/>
+  <page id="generalpage"/>
+</definition:ConnectorDefinition>

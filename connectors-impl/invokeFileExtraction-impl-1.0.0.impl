@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>invokeFileExtraction-impl</implementationId>
+  <implementationVersion>1.0.0</implementationVersion>
+  <definitionId>invokeFileExtraction</definitionId>
+  <definitionVersion>1.0.0</definitionVersion>
+  <implementationClassname>org.mycompany.connector.InvokeFileExtractionImpl</implementationClassname>
+  <description>invokeFileExtraction</description>
+  <jarDependencies/>
+</implementation:connectorImplementation>

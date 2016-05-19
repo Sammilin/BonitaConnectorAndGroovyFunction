@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" definitionId="invokeBRMDecision" version="1.0.0" name="solid" modelVersion="7.1.0-001">
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="brm_CreateTaskType_URL" content="brm_CreateTaskType_URL" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="brm_CreateTaskType_URL" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="payload">
+    <expression xsi:type="expression:Expression" name="&lt;batch-execution>&#xA;     &lt;insert out-identifier=&quot;CreateTask&quot;>&#xA;        &lt;trend.CreateTask>&#xA;            &lt;requestType>DirectSubmission&lt;/requestType>&#xA;            &lt;srType>Clean Failed&lt;/srType>&#xA;            &lt;charonResult>Malicious&lt;/charonResult>&#xA;            &lt;detectionType>&lt;/detectionType>&#xA;            &lt;bprRequired>False&lt;/bprRequired>&#xA;            &lt;patternTypeDetection>False&lt;/patternTypeDetection>&#xA;        &lt;/trend.CreateTask>&#xA;     &lt;/insert>&#xA;     &lt;fire-all-rules/>&#xA;&lt;/batch-execution>" content="&lt;batch-execution>&#xA;     &lt;insert out-identifier=&quot;CreateTask&quot;>&#xA;        &lt;trend.CreateTask>&#xA;            &lt;requestType>DirectSubmission&lt;/requestType>&#xA;            &lt;srType>Clean Failed&lt;/srType>&#xA;            &lt;charonResult>Malicious&lt;/charonResult>&#xA;            &lt;detectionType>&lt;/detectionType>&#xA;            &lt;bprRequired>False&lt;/bprRequired>&#xA;            &lt;patternTypeDetection>False&lt;/patternTypeDetection>&#xA;        &lt;/trend.CreateTask>&#xA;     &lt;/insert>&#xA;     &lt;fire-all-rules/>&#xA;&lt;/batch-execution>" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="method">
+    <expression xsi:type="expression:Expression" name="brm_CreateTaskType_method" content="brm_CreateTaskType_method" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="brm_CreateTaskType_method" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="brm_username" content="brm_username" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="brm_username" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="brm_password" content="brm_password" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="brm_password" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

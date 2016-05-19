@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="database-mssqlserver2008" version="1.0.0" name="test" modelVersion="7.1.0-001">
+  <parameters key="driver">
+    <expression xsi:type="expression:Expression" name="com.microsoft.sqlserver.jdbc.SQLServerDriver" content="com.microsoft.sqlserver.jdbc.SQLServerDriver" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="jdbc:sqlserver://SJDC-AIMSHDB01S.us.trendnet.org:1433;databaseName=SPN_NEURON" content="jdbc:sqlserver://SJDC-AIMSHDB01S.us.trendnet.org:1433;databaseName=SPN_NEURON" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="script">
+    <expression xsi:type="expression:Expression" name="&lt;pattern-expression>" content="select ServiceID,Consumer,Log,ProcessDateTime from SPN_NEURON.[ACS].[TBL_NEURON_EVENT_LOG] (nolock)&#xA;where serviceid='176842f0-681c-11e5-ac87-005056a60204'" type="TYPE_PATTERN" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="SPN_NEURON" content="SPN_NEURON" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="*UHB7ygv" content="*UHB7ygv" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="separator">
+    <expression xsi:type="expression:Expression" name=";" content=";" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="outputType">
+    <expression xsi:type="expression:Expression" name="outputType" content="one_row" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

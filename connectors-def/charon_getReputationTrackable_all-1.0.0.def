@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>charon_getReputationTrackable_all</id>
+  <version>1.0.0</version>
+  <category id="Trend"/>
+  <input mandatory="true" name="url" type="java.lang.String"/>
+  <input mandatory="true" name="targetNamespace" type="java.lang.String"/>
+  <input name="bodymap" type="java.util.Map"/>
+  <output name="responseXml" type="java.lang.String"/>
+  <page id="externalServiceInfo">
+    <widget xsi:type="definition:Text" id="service_endpoint" inputName="url"/>
+    <widget xsi:type="definition:Text" id="service_targetns" inputName="targetNamespace"/>
+    <widget xsi:type="definition:Text" id="bodylist" inputName="bodymap"/>
+  </page>
+</definition:ConnectorDefinition>

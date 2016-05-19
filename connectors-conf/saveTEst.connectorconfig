@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="connectionSOAPAPI" version="1.0.0" name="saveTEst" modelVersion="7.1.0-001">
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="http://SJC1-CHRN-S-VIP.frsnet.org:8080/WebService/Service1.asmx" content="http://SJC1-CHRN-S-VIP.frsnet.org:8080/WebService/Service1.asmx" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="namespace">
+    <expression xsi:type="expression:Expression" name="http://tempuri.org/" content="http://tempuri.org/" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="bodyXML">
+    <expression xsi:type="expression:Expression" name="&lt;getReputation_all>&#xD; &lt;!--Optional:-->&#xD; &lt;ServiceID>16ede30d-06f5-49d9-93dc-89d13e176ee1&lt;/ServiceID>&#xD; &lt;!--Optional:-->&#xD; &lt;sha1>225DBE9B941919DF317F15F7B80B511F37416A35&lt;/sha1>&#xD; &lt;withCompetitorResult>false&lt;/withCompetitorResult>&#xD; &lt;/getReputation_all>" content="&lt;getReputation_all>&#xD; &lt;!--Optional:-->&#xD; &lt;ServiceID>16ede30d-06f5-49d9-93dc-89d13e176ee1&lt;/ServiceID>&#xD; &lt;!--Optional:-->&#xD; &lt;sha1>225DBE9B941919DF317F15F7B80B511F37416A35&lt;/sha1>&#xD; &lt;withCompetitorResult>false&lt;/withCompetitorResult>&#xD; &lt;/getReputation_all>" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

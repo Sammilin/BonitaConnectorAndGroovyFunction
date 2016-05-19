@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="connectionHTTPAPI" version="1.0.0" name="getFileSubmissionInfo" modelVersion="7.1.0-001">
+  <parameters key="endpoint">
+    <expression xsi:type="expression:Expression" name="http://10.1.180.42:8088/G2multidivision/getFileSubmissionInfo" content="http://10.1.180.42:8088/G2multidivision/getFileSubmissionInfo" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="method">
+    <expression xsi:type="expression:Expression" name="POST" content="POST" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="payload">
+    <expression xsi:type="expression:Expression" name="{&#xA;&quot;serviceID&quot;:&quot;5795697e-c0a3-4527-9e85-a934284b083c&quot;,&#xA;&quot;entity_Id&quot;:14&#xA;}" content="{&#xA;&quot;serviceID&quot;:&quot;5795697e-c0a3-4527-9e85-a934284b083c&quot;,&#xA;&quot;entity_Id&quot;:14&#xA;}" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="properties">
+    <expression xsi:type="expression:Expression" name="application/json" content="application/json" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

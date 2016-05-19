@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>connectionHTTPAPI</id>
+  <version>1.0.0</version>
+  <category id="Trend"/>
+  <input name="endpoint" type="java.lang.String"/>
+  <input name="method" type="java.lang.String"/>
+  <input name="payload" type="java.lang.String"/>
+  <input name="properties" type="java.lang.String"/>
+  <output name="output" type="java.lang.String"/>
+  <page id="HTTPConnectionPage">
+    <widget xsi:type="definition:Text" id="Endpoint" inputName="endpoint"/>
+    <widget xsi:type="definition:Text" id="Method" inputName="method"/>
+    <widget xsi:type="definition:Text" id="payload" inputName="payload"/>
+    <widget xsi:type="definition:Text" id="content-type" inputName="properties"/>
+  </page>
+</definition:ConnectorDefinition>

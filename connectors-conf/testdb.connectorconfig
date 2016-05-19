@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="DBConnection" version="1.0.0" name="testdb" modelVersion="7.1.0-001">
+  <parameters key="endpoint">
+    <expression xsi:type="expression:Expression" name="SJDC-AIMSHDB01S.us.trendnet.org" content="SJDC-AIMSHDB01S.us.trendnet.org" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="port">
+    <expression xsi:type="expression:Expression" name="1433" content="1433" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="database">
+    <expression xsi:type="expression:Expression" name="SPN_NEURON" content="SPN_NEURON" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="SPN_NEURON" content="SPN_NEURON" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

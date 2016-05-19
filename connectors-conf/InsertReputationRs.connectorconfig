@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="connectionHTTPAPI" version="1.0.0" name="InsertReputationRs" modelVersion="7.1.0-001">
+  <parameters key="endpoint">
+    <expression xsi:type="expression:Expression" name="http://10.1.180.42:8088/G2multidivision/InsertReputationRs" content="http://10.1.180.42:8088/G2multidivision/InsertReputationRs" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="api_InsertReputationRs_URL" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="method">
+    <expression xsi:type="expression:Expression" name="POST" content="POST" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="payload">
+    <expression xsi:type="expression:Expression" name="{&quot;requesttype&quot;:&quot;DirectSubmission&quot;,&#xA;&quot;sha1&quot;:&quot;D42937D760A4152A4C9B4976A2714544054B120C&quot;,&#xA;&quot;charonresult&quot;:&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?>&lt;soap:Envelope xmlns:soap=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot; xmlns:xsi=\&quot;http://www.w3.org/2001/XMLSchema-instance\&quot; xmlns:xsd=\&quot;http://www.w3.org/2001/XMLSchema\&quot;>&lt;soap:Body>&lt;getReputationTrackable_allResponse xmlns=\&quot;http://tempuri.org/\&quot;>&lt;getReputationTrackable_allResult>&lt;status>Indeterminable&lt;/status>&lt;errorCode />&lt;/getReputationTrackable_allResult>&lt;/getReputationTrackable_allResponse>&lt;/soap:Body>&lt;/soap:Envelope>&quot;,&#xA;&quot;messagekey&quot;:&quot;23bc98fd-51c7-4b3b-adf5-5d7a48d1d00b&quot;&#xA;}" content="{&quot;requesttype&quot;:&quot;DirectSubmission&quot;,&#xA;&quot;sha1&quot;:&quot;D42937D760A4152A4C9B4976A2714544054B120C&quot;,&#xA;&quot;charonresult&quot;:&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?>&lt;soap:Envelope xmlns:soap=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot; xmlns:xsi=\&quot;http://www.w3.org/2001/XMLSchema-instance\&quot; xmlns:xsd=\&quot;http://www.w3.org/2001/XMLSchema\&quot;>&lt;soap:Body>&lt;getReputationTrackable_allResponse xmlns=\&quot;http://tempuri.org/\&quot;>&lt;getReputationTrackable_allResult>&lt;status>Indeterminable&lt;/status>&lt;errorCode />&lt;/getReputationTrackable_allResult>&lt;/getReputationTrackable_allResponse>&lt;/soap:Body>&lt;/soap:Envelope>&quot;,&#xA;&quot;messagekey&quot;:&quot;23bc98fd-51c7-4b3b-adf5-5d7a48d1d00b&quot;&#xA;}" interpreter="GROOVY" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="request">
+        <dataType xsi:type="process:StringType" href="platform:/resource/default/diagrams/GetFileReputationProcess-1.0.proc#_p1ZpZ4KpEeWOHvB7CaSu1Q"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="properties">
+    <expression xsi:type="expression:Expression" name="application/json" content="application/json" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

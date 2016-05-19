@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>invokeBRMDecision</id>
+  <version>1.0.0</version>
+  <category id="Trend"/>
+  <input name="url" type="java.lang.String"/>
+  <input name="payload" type="java.lang.String"/>
+  <input name="method" type="java.lang.String"/>
+  <input name="username" type="java.lang.String"/>
+  <input name="password" type="java.lang.String"/>
+  <output name="output1" type="java.lang.String"/>
+  <page id="settingInfo">
+    <widget xsi:type="definition:Text" id="endpoint" inputName="url"/>
+    <widget xsi:type="definition:Text" id="payload_xml" inputName="payload"/>
+    <widget xsi:type="definition:Text" id="method" inputName="method"/>
+    <widget xsi:type="definition:Text" id="username" inputName="username"/>
+    <widget xsi:type="definition:Password" id="password" inputName="password"/>
+  </page>
+</definition:ConnectorDefinition>

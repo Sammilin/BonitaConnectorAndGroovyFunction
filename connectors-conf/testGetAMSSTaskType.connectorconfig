@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="invokeBRMDecision" version="1.0.0" name="testGetAMSSTaskType" modelVersion="7.1.0-001">
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="http://tw-bawiki01d:8080/kie-server/services/rest/server/containers/CreateTaskType" content="http://tw-bawiki01d:8080/kie-server/services/rest/server/containers/CreateTaskType" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="payload">
+    <expression xsi:type="expression:Expression" name="&lt;batch-execution>&#xA;     &lt;insert out-identifier=&quot;CreateTask&quot;>&#xA;        &lt;trend.CreateTask>&#xA;            &lt;requestType>DirectSubmission&lt;/requestType>&#xA;            &lt;srType>Clean Failed&lt;/srType>&#xA;            &lt;charonResult>Malicious&lt;/charonResult>&#xA;            &lt;detectionType>&lt;/detectionType>&#xA;            &lt;bprRequired>False&lt;/bprRequired>&#xA;            &lt;patternTypeDetection>False&lt;/patternTypeDetection>&#xA;        &lt;/trend.CreateTask>&#xA;     &lt;/insert>&#xA;     &lt;fire-all-rules/>&#xA;&lt;/batch-execution>" content="&lt;batch-execution>&#xA;     &lt;insert out-identifier=&quot;CreateTask&quot;>&#xA;        &lt;trend.CreateTask>&#xA;            &lt;requestType>DirectSubmission&lt;/requestType>&#xA;            &lt;srType>Clean Failed&lt;/srType>&#xA;            &lt;charonResult>Malicious&lt;/charonResult>&#xA;            &lt;detectionType>&lt;/detectionType>&#xA;            &lt;bprRequired>False&lt;/bprRequired>&#xA;            &lt;patternTypeDetection>False&lt;/patternTypeDetection>&#xA;        &lt;/trend.CreateTask>&#xA;     &lt;/insert>&#xA;     &lt;fire-all-rules/>&#xA;&lt;/batch-execution>" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="method">
+    <expression xsi:type="expression:Expression" name="POST" content="POST" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

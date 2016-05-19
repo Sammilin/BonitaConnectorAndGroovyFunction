@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="brmdata2" version="1.0.0" name="testConnection" modelVersion="7.1.0-001">
+  <parameters key="requsetType">
+    <expression xsi:type="expression:Expression" name="Semi-Direction Submission" content="Semi-Direction Submission" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="sRType">
+    <expression xsi:type="expression:Expression" name="File to Verify" content="File to Verify" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="charonResut">
+    <expression xsi:type="expression:Expression" name="Normal" content="Normal" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

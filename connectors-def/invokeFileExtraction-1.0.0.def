@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>invokeFileExtraction</id>
+  <version>1.0.0</version>
+  <category id="Trend"/>
+  <input defaultValue="" mandatory="false" name="serviceId" type="java.lang.String"/>
+  <input defaultValue="" mandatory="false" name="file_path" type="java.lang.String"/>
+  <input name="endpoint" type="java.lang.String"/>
+  <output name="output" type="java.lang.String"/>
+  <page id="inputExFiledata">
+    <widget xsi:type="definition:Text" id="ServiceId" inputName="serviceId"/>
+    <widget xsi:type="definition:Text" id="FilePath" inputName="file_path"/>
+    <widget xsi:type="definition:Text" id="endpoint" inputName="endpoint"/>
+  </page>
+</definition:ConnectorDefinition>

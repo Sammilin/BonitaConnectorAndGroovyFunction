@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>charon_getReputationTrackable_all-impl</implementationId>
+  <implementationVersion>1.0.0</implementationVersion>
+  <definitionId>charon_getReputationTrackable_all</definitionId>
+  <definitionVersion>1.0.0</definitionVersion>
+  <implementationClassname>org.mycompany.connector.Charon_getReputationTrackable_allImpl</implementationClassname>
+  <description></description>
+  <jarDependencies/>
+</implementation:connectorImplementation>

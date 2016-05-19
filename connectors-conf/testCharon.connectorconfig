@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="connectionSOAPAPI" version="1.0.0" name="testCharon" modelVersion="7.1.0-001">
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="http://SJC1-CHRN-S-VIP.frsnet.org:8080/WebService/Service1.asmx" content="http://SJC1-CHRN-S-VIP.frsnet.org:8080/WebService/Service1.asmx" interpreter="GROOVY" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="charon_URL" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="namespace">
+    <expression xsi:type="expression:Expression" name="http://tempuri.org/" content="http://tempuri.org/" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="charon_namespace" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="bodyXML">
+    <expression xsi:type="expression:Expression" name="&lt;getReputationTrackable_all>&#xA;  &lt;ServiceID>db49129f-49ea-48c5-99e1-118763cfaf49&lt;/ServiceID>&#xA;  &lt;sha1>da39a3ee5e6b4b0d3255bfef95601890afd80709&lt;/sha1>&#xA;  &lt;messagekey>6c5ee76d-0d3a-44fc-b7a2-79dd4fca120d&lt;/messagekey>&#xA;  &lt;withCompetitorResult>false&lt;/withCompetitorResult>&#xA;&lt;/getReputationTrackable_all>" content="&lt;getReputationTrackable_all>&#xA;  &lt;ServiceID>db49129f-49ea-48c5-99e1-118763cfaf49&lt;/ServiceID>&#xA;  &lt;sha1>da39a3ee5e6b4b0d3255bfef95601890afd80709&lt;/sha1>&#xA;  &lt;messagekey>6c5ee76d-0d3a-44fc-b7a2-79dd4fca120d&lt;/messagekey>&#xA;  &lt;withCompetitorResult>false&lt;/withCompetitorResult>&#xA;&lt;/getReputationTrackable_all>" returnTypeFixed="true">
+      <referencedElements xsi:type="process:Data" name="requestXML">
+        <dataType xsi:type="process:StringType" href="platform:/resource/default/diagrams/GetFileReputationProcess-1.0.proc#_p1ZpZ4KpEeWOHvB7CaSu1Q"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

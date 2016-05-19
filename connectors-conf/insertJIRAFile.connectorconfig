@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" definitionId="connectionHTTPAPI" version="1.0.0" name="insertJIRAFile" modelVersion="7.1.0-001">
+  <parameters key="endpoint">
+    <expression xsi:type="expression:Expression" name="http://10.1.180.42:8088/G2multidivision/CreateFRSTask" content="http://10.1.180.42:8088/G2multidivision/CreateFRSTask" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="api_CreateFRSTask_URL" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="method">
+    <expression xsi:type="expression:Expression" name="POST" content="POST" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="payload">
+    <expression xsi:type="expression:Expression" name="request" content="import groovy.json.JsonOutput;&#xA;import static java.util.UUID.randomUUID&#xA;def uuid = randomUUID() as String&#xA;TimeZone.setDefault(TimeZone.getTimeZone('UTC'))&#xA;def now = new Date()&#xA;//println now&#xA;def datatime = now.format(&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;)&#xA;&#xA;def array = [ParentId: 'SRCAS-8',&#xA;&#x9;TaskType: 'File to Verify',&#xA;&#x9;Description: 'test by BPM',&#xA;&#x9;Sha1:'003DB3901E5885174AA4085C0001554E555D47DD',&#xA;&#x9;PatternBrench:'Global Smart Scan Pattern',&#xA;&#x9;DueDate:'2099-12-12',&#xA;&#x9;EngineVersion:'',&#xA;&#x9;Detection:'',&#xA;&#x9;Note:'',&#xA;&#x9;Service_id:uuid,&#xA;&#x9;DateTime:datatime,&#xA;&#x9;SuspiciousFiles:''&#xA;&#x9;]&#xA;&#xA;def json = JsonOutput.toJson(array);&#xA;//apiAccessor.processAPI.addComment(rootProcessInstanceId,json)&#xA;return json&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="properties">
+    <expression xsi:type="expression:Expression" name="application/json" content="application/json" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>
